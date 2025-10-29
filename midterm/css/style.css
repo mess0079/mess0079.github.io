@@ -1,0 +1,155 @@
+/*----------GENERAL----------*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #90c9c3;
+    color: #000;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* ---------- HEADER ---------- */
+header {
+    position: relative;
+    text-align: center;
+}
+header img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- NAVIGATION ---------- */
+nav {
+    background-color: #a7d6cf;
+    text-align: center;
+    border-top: 2px solid #7bb0a9;
+    border-bottom: 2px solid #7bb0a9;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+   font-size: 1.2em;
+}
+nav a:hover {
+    color: #2f6661;
+}
+
+/* ---------- ARTICLE ---------- */
+article{
+
+    background-color: #b8e0dc;
+    padding: 25px;
+    
+}
+
+.article-img {
+    float: left;
+  margin-right: 15px;
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+
+}                               
+article h2 {
+    margin-top: 0;
+    color: #063b37;
+}
+
+article p {
+    text-align: justify;
+}
+
+/* ---------- FACTS SECTION ---------- */
+.facts {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #b8e0dc;
+    padding: 25px;
+    border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.facts h2 {
+    color: #063b37;
+}
+.facts ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* ---------- CONTACT SECTION ---------- */
+.contact {
+    width: 80%;
+    margin: 20px auto ;
+    background-color: #b8e0dc;
+    padding: 25px;
+    border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.contact h2 {
+    color: #063b37;
+}
+form {
+    display: flex;
+    flex-direction: column; 
+}
+label {
+    margin-top: 10px;
+}   
+input, textarea {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #7bb0a9;
+    border-radius: 4px;
+}
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    background-color: #7bb0a9;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #5a928b;
+}
+
+/* ---------- Footer ---------- */
+footer {
+   text-align: center;
+   padding: 10px;
+   background-color: #a7d6cf;
+   color: #063b37;
+   font-size: 0.9em;
+   margin-top: 30px;
+   border-top: 2px solid #7bb0a9;
+}
+
+/*---------- FLOAT FIX ----------*/
+article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
